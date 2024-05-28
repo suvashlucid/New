@@ -1,0 +1,58 @@
+/* Tech Component CSS */
+.tech-container {
+  display: grid;
+  grid-gap: 20px;
+  margin: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.tech-item {
+  background-color: #fff;
+
+  overflow: hidden;
+}
+
+.tech-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tech-content {
+  padding: 15px;
+}
+
+.tech-content h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.tech-content p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Define different grid sizes */
+.sgrid1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.sgrid2 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* Define media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .tech-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tech-container {
+    grid-template-columns: 1fr;
+  }
+}

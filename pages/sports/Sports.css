@@ -1,0 +1,73 @@
+/* Sports.css */
+
+.sportsmain {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-right: 20px;
+  margin-left: 12px;
+}
+.sgrid3 {
+  margin-right: 22px;
+}
+
+.sgrid1,
+.sgrid2,
+.sgrid3,
+.sgrid4,
+.sgrid5 {
+  padding: 10px;
+}
+
+.sgrid1 img,
+.sgrid2 img,
+.sgrid3 img,
+.sgrid4 img,
+.sgrid5 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sgrid1 h2,
+.sgrid2 h2,
+.sgrid3 h2,
+.sgrid4 h2,
+.sgrid5 h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.sgrid1 p,
+.sgrid2 p,
+.sgrid3 p,
+.sgrid4 p,
+.sgrid5 p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.sgrid1 hr,
+.sgrid2 hr,
+.sgrid3 hr,
+.sgrid4 hr,
+.sgrid5 hr {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+}
+.sgrid6 hr {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  .sportsmain {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sportsmain {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

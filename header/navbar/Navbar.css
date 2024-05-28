@@ -1,0 +1,48 @@
+/* Default styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+.date {
+  color: black;
+  font-size: 18px;
+}
+
+.weather {
+  text-align: center;
+}
+
+.logobar {
+  height: auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .date {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .date {
+    font-size: 8px;
+  }
+  .navbar {
+    font-size: 8px;
+    flex-direction: row;
+    width: 100%;
+  }
+  .weather {
+    font-size: 7px;
+  }
+}
